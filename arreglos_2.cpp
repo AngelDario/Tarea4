@@ -41,8 +41,16 @@ void transladar(char cadena[], char cadena2[]){
     aux++;
   }
 }
+void concatenar(char *lista1,char *lista2){
+	int i=0;
+	for(int i=0;lista2[i]!='\0';i++){
+		lista1[i]=lista2[i];
+		i++;
+	}
+}
 
 int main(){
+    /*
     int lista[5]={1,2,3,4,5};
     invertir(lista, 5);
     for(int i=0; i<5; i++){
@@ -54,5 +62,9 @@ int main(){
     char hola[]="hola", hola2[4];
     transladar(hola,hola2);
     cout<<hola2;
+    */
+    int lista1[]={1,2,3};
+    int lista2[]={1,2,3,4};
+    concatenar(lista1,lista2);
   return 0;
 }
